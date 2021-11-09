@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 
-export default function WeatherInfo() {
+export default function WeatherInfo(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
@@ -116,13 +116,30 @@ export default function WeatherInfo() {
               </div>
             </div>
           </div>
+          <footer>
+            This project is coded by{" "}
+            <a
+              href="https://github.com/miraybuy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Miray Buyukkaray
+            </a>{" "}
+            and is{" "}
+            <a
+              href="https://github.com/miraybuy/weather-react-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              open-sourced on Github
+            </a>
+          </footer>
         </div>
       </div>
     );
   } else {
     const apiKey = "2bd326a60dc89a53287e446e819664df";
-    let city = `Milan`;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading";
