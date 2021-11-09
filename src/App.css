@@ -64,10 +64,11 @@
 ul {
   list-style: none;
   text-align: left;
+  font-size: 12px;
 }
 
 footer {
-  font-size: 12px;
+  font-size: 10px;
   margin: 10px;
   color: black;
 }
