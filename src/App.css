@@ -5,14 +5,22 @@
 
 .appWrapper {
   display: block;
-  max-width: 500px;
+  max-width: 430px;
   margin: 30px auto;
 }
 .weatherApp {
+  padding: 30px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #b91646;
+  border-radius: 10px;
+  box-shadow: 5px 5px #b91646;
+  background: #fbf3e4;
+  opacity: 0.9;
   display: block;
   padding: 20px;
   border-radius: 15px;
-  background: rgb(212, 236, 221, 0.8);
+
   background-size: cover;
   font-family: "Poppins", sans-serif;
   color: rgb(17, 32, 49);
@@ -23,7 +31,7 @@
 }
 #locationButton {
   color: white;
-  background-color: rgb(123, 119, 255);
+  background-color: #105652;
   border: 0;
   border-radius: 5px;
 }
@@ -56,15 +64,12 @@
 ul {
   list-style: none;
   text-align: left;
-  padding-left: 2px;
-}
-li {
-  padding: 5px;
 }
 
 small {
   color: black;
 }
+
 .forecastLow,
 #todaysLow {
   color: rgb(52, 91, 99);
@@ -83,8 +88,9 @@ small {
   font-size: 23px;
 }
 
-#weatherDescription {
-  font-size: 15px;
+#weatherDescription,
+.today {
+  font-size: 18px;
   padding: 5px 0;
 }
 #weatherDescription::first-letter {
