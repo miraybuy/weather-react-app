@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import FormattedDate from "./FormattedDate";
+import FormattedSun from "./FormattedSun";
 import axios from "axios";
 
 export default function WeatherInfo(props) {
@@ -18,6 +20,9 @@ export default function WeatherInfo(props) {
       tempMax: response.data.main.temp_max,
       tempMin: response.data.main.temp_min,
       pressure: response.data.main.pressure,
+      date: new Date(response.data.dt * 1000),
+      sunrise: new Date(response.data.sys.sunrise * 1000),
+      sunset: new Date(response.data.sys.sunset * 1000),
     });
   }
 
@@ -53,7 +58,9 @@ export default function WeatherInfo(props) {
               <div className="col ">
                 <div className="currentWeather">
                   <h1>
-                    <div id="currentTime"></div>
+                    <div id="currentTime">
+                      <FormattedDate date={weatherData.date} />
+                    </div>
 
                     <span id="currentLocation">{weatherData.city}</span>
                     <div className="clear-fix currentTemperature">
@@ -108,8 +115,12 @@ export default function WeatherInfo(props) {
                   <div className="col">
                     <ul>
                       <li>Pressure: {weatherData.pressure} hPa</li>
-                      <li>Sunrise: </li>
-                      <li>Sunset: </li>
+                      <li>
+                        Sunrise: <FormattedSun date={weatherData.sunrise} />
+                      </li>
+                      <li>
+                        Sunset: <FormattedSun date={weatherData.sunset} />
+                      </li>
                     </ul>
                   </div>
                 </div>
