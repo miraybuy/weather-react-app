@@ -15,7 +15,7 @@
   border-color: #b91646;
   border-radius: 10px;
   box-shadow: 5px 5px #b91646;
-  background: #fbf3e4;
+  background: rgb(251, 243, 228);
   opacity: 0.9;
   display: block;
   padding: 20px;
@@ -33,11 +33,13 @@
   color: white;
   background-color: #105652;
   border: 0;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .searchButton {
-  background-color: rgb(21, 45, 53);
-  border: 0;
+  background-color: rgb(21, 45, 53) !important;
+  border: 0 !important;
+  border-radius: 15px !important;
+  margin: 5px;
 }
 .searchButton:hover,
 #locationButton:hover {
@@ -46,9 +48,6 @@
 }
 .today {
   padding-right: 15px;
-}
-.locationArrow {
-  font-size: 15px;
 }
 
 #dailyForecast {
