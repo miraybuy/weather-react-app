@@ -37,16 +37,13 @@ export default function WeatherInfo(props) {
             </h1>
           </div>
           <hr size="4" color="grey" width="100%" />
-
-          <div className="row">
+          <div className="row info">
             <div className="col">
-              <div className="info">
-                <ul>
-                  <li>Feels like: {Math.round(props.data.feelsLike)}°C </li>
-                  <li>Humidity: {props.data.humidity} %</li>
-                  <li>Wind: {props.data.wind} km/hr</li>
-                </ul>
-              </div>
+              <ul>
+                <li>Feels like: {Math.round(props.data.feelsLike)}°C </li>
+                <li>Humidity: {props.data.humidity}%</li>
+                <li>Wind: {props.data.wind} km/hr</li>
+              </ul>
             </div>
             <div className="col">
               <ul>
@@ -62,6 +59,7 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
+      <hr size="4" color="grey" width="100%" />
     </div>
   );
 }
