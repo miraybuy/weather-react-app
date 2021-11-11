@@ -19,7 +19,7 @@ export default function WeatherInfo(props) {
               <div className="clear-fix currentTemperature">
                 <span className="float-left icon">
                   {" "}
-                  <WeatherIcon code={props.data.icon} size={58} />
+                  <WeatherIcon code={props.data.icon} size={64} />
                 </span>{" "}
                 <UnitConversion celsius={props.data.temperature} />
               </div>
@@ -36,7 +36,7 @@ export default function WeatherInfo(props) {
               </div>
             </h1>
           </div>
-          <hr size="4" color="grey" width="100%" />
+
           <div className="row info">
             <div className="col">
               <ul>

@@ -8,9 +8,11 @@ export default function App() {
         <div className="appWrapper">
           <div className="weatherApp">
             <Weather defaultCity="Milan" />
+            <hr size="4" color="grey" width="100%" />
           </div>
+
           <footer>
-            This project is coded by{" "}
+            👩🏻‍💻 This project is coded by{" "}
             <a
               href="https://github.com/miraybuy"
               target="_blank"
@@ -25,6 +27,14 @@ export default function App() {
               rel="noreferrer"
             >
               open-sourced on Github
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://focused-allen-97e92e.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              hosted on Netflify
             </a>
           </footer>
         </div>

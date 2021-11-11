@@ -4,7 +4,7 @@
 }
 
 .appWrapper {
-  max-width: 480px;
+  max-width: 500px;
   margin: 40px auto;
 }
 .weatherApp {
@@ -58,8 +58,11 @@ footer {
   margin: 0 5px;
   color: black;
 }
-.info ul,
-.info col {
+footer a {
+  color: #b91646;
+}
+.info div,
+.info ul {
   padding: 0;
 }
 .forecastLow,
