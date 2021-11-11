@@ -1,0 +1,10 @@
+.DailyForecast {
+  text-align: center;
+}
+.forecastDay {
+  font-size: 18px;
+}
+.forecastHigh,
+.forecastLow {
+  font-size: 12px;
+}

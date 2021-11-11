@@ -4,7 +4,7 @@
 }
 
 .appWrapper {
-  max-width: 420px;
+  max-width: 480px;
   margin: 40px auto;
 }
 .weatherApp {
@@ -46,17 +46,6 @@
   padding-right: 15px;
 }
 
-#dailyForecast {
-  text-align: center;
-  padding: 50px, 0;
-}
-.forecastContainer {
-  border: 1x solid rgb(123, 119, 255, 0.9);
-  background-color: rgb(123, 119, 255, 0.2);
-  margin: 5px;
-  border-radius: 10px;
-}
-
 ul {
   list-style: none;
   text-align: center;
@@ -78,14 +67,6 @@ footer {
   color: rgb(52, 91, 99);
 }
 
-.forecastDay {
-  padding: 10px 10px 0 0;
-  font-size: 23px;
-}
-.currentTemperature canvas {
-  margin: 5px, 5px, -5px, -5px;
-}
-
 #weatherDescription,
 .today {
   font-size: 18px;
@@ -95,10 +76,6 @@ footer {
   text-transform: capitalize;
 }
 
-.forecastHigh,
-.forecastLow {
-  font-size: 20px;
-}
 #currentTime {
   font-size: 20px;
 }
