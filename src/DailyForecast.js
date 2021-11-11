@@ -22,7 +22,7 @@ export default function DailyForecast(props) {
                   <ForecastContainer data={dailyForecast} />
                 </div>
               );
-            }
+            } else return null;
           })}
         </div>
       </div>
